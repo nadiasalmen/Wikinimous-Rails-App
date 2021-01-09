@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'articles', to: 'articles#create'
 
   # read one - show must go after the "new" routes
-  get 'artciles/:id', to: 'articles#show', as: :article
+  get 'articles/:id', to: 'articles#show', as: :article
 
   # edit one
   get 'articles/:id/edit', to: 'articles#edit', as: :edit_article
