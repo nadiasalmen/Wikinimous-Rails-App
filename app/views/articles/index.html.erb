@@ -1,0 +1,6 @@
+<div class="container col-5 py-3">
+  <% @articles.each do |article| %>
+    <h2 class="text-info"><%= article.title %></h2>
+    <p><%= article.content %></p>
+  <% end %>
+</div>
