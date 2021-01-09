@@ -1,0 +1,14 @@
+<div class="container col-5 py-3">
+  <div class="d-flex justify-content-start aling-items-center">
+    <h2 class="text-info my-0 mr-2"><%= @article.title %></h2>
+    <%= link_to edit_article_path, :class => "m-2" do %>
+      <i class="far fa-edit text-info fa-lg"></i>
+    <% end %>
+    <%= link_to articles_path, method: :delete, data: { confirm: "Are you sure?" }, :class => "m-2" do %>
+      <i class="far fa-trash-alt text-info fa-lg"></i>
+    <% end %>
+  </div>
+  <div class="container border border-light my-3"></div>
+  <p><%= @article.content %></p>
+  <%= link_to 'Back', articles_path, :class => "btn btn-outline-info mt-2"  %>
+</div>
